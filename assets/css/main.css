@@ -1,8 +1,9 @@
 :root{
 	--white-color: white;
-	--black-color: rgb(39, 39, 39);
-	--border-color:  rgba(204, 204, 204, 0.486);
-    --background-color: #f8f8f800;
+	--black-color: rgba(39, 39, 39, 0.7);
+	--border-color:  rgba(255, 255, 255, 0.1);
+    --background-color: #181818;
+    --background-header-color: rgba(33, 33, 33, 0.98);
 }
 
 * {
@@ -26,7 +27,7 @@ p{
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: var(--black-color);
+	background-color: var(--background-header-color);
 	width: 100%;
 	height: 56px;
 	display: flex;
@@ -65,10 +66,13 @@ p{
 }
 .logo-name{
 	font-size: 20px;
-	color: white;
 	margin: auto 5px;
-	font-weight: 100;
+	font-weight: 10;
 	font-family: impact;
+}
+.logo-name-color{
+    text-decoration: none;
+    color: white;
 }
 
 .nav__center{
@@ -127,6 +131,11 @@ p{
     margin: auto 0;
     border: 1px solid #4e97f7;
 	color: #4e97f7;
+    width: 100%;
+    text-align: center;
+}
+.nav-link-user{
+    padding: 8px 0;
 }
 .mr-3{
 	margin-right: 1rem
@@ -150,7 +159,7 @@ p{
     min-width: 70px;
     width: 70px;
     height: calc(100% - 60px);
-    background-color: var(--black-color);
+    background-color: var(--background-header-color);
 }
 
 .small-sidebar .side-bar__item {
@@ -179,6 +188,7 @@ p{
     color: var(--white-color);
     font-size: 16px;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .side-bar__login a {
@@ -187,10 +197,10 @@ p{
     margin-top: 12px;
 }
 
-.side-bar__item:hover,
-.side-bar__item--active {
-    background-color: var(--background-color);
-    color: black;
+.side-bar__item:hover {
+    background-color: gray;
+    color: white;
+    text-decoration: none;
 }
 
 .side-bar__best span {
@@ -212,3 +222,140 @@ p{
 	color: white ;
 }
 
+
+/* Filters */
+.filters {
+    position: fixed;
+    left: 70px;
+    top: 56px;
+    width: 100%;
+    height: 56px;
+    border-top: 0.5px solid var(--border-color);
+    border-bottom: 0.5px solid var(--border-color);
+    background-color: var(--background-header-color);
+    align-items: center;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.filters::-webkit-scrollbar {
+    display: none;
+}
+
+.filters_option {
+    flex: 0 0 auto;
+    padding: 4px 16px;
+    background: rgba(161, 161, 161,0.5);
+    font-size: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    margin: 0 6px;
+    color: white;
+    height: 32px;
+}
+
+.filters_option:hover{
+    background-color: gray;
+}
+.filters_option--active {
+    background-color: var(--white-color);
+    color: black;
+}
+
+.owl-item {
+    width: 60px;
+}
+
+
+/* video list */
+.video_container{
+    margin-top: 120px;
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100%-250px);
+
+}
+.video_container_large{
+    margin-left: 70px;
+    width: calc(100%-70px);
+
+}
+.video_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.video_content__col{
+    flex: 0 0 25%;
+    max-width: 25%;
+    position: relative;
+    min-width: 270px;
+    min-height: 271px;
+    padding-left: 15px;
+    padding-right: 16px;
+    margin-bottom: 40px;
+}
+.video_content__col a{
+    text-decoration: none;
+}
+.video_thumbal{
+    position: relative;
+}
+.thumbal_video{
+    width: 100%;
+    object-fit: cover;
+}
+.timevideo{
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+    color: var(--white-color);
+    padding: 4px;
+    font-size: 14px;
+    background-color: black;
+}
+.video_content__video_info{
+    display: flex;
+    margin-top: 8px;
+    color: var(--white-color);
+}
+.channel_img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-top: 12px;
+}
+.info1{
+    margin: 12px 0 2px 0;
+}
+.video_description{
+    display: -webkit-box;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+}
+.info_name_channel{
+    font-size: 14px;
+    color: #aaa;
+    font-family: Arial;
+    font-weight: 400;  
+    margin-top: 8px;
+}
+.video_view{
+    font-size: 14px;
+    margin-left: 48px;
+    color: #aaa;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 400;
+}
