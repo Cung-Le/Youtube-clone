@@ -3,10 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+	<link rel="stylesheet" href="./assets/css/main.css">
 	<link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+	<link rel="stylesheet" href="./assets/css/reponsive.css">
 	<title>Youtube</title>
 </head>
 <body>
@@ -18,8 +20,7 @@
 			</div>
 
 			<div class="logo_ytb d-flex js-center">
-				<i class="fa-brands fa-youtube"></i>
-				<h1 class="logo-name"><a href="#" class="logo-name-color">YouTube</a></h1>
+				<h1 class="logo-name"><a href="#" class="logo-name-color"><img src="./assets/img/logo.png"></a></h1>
 			</div>
 		</div>
 		<div class="nav__center d-flex js-center">
@@ -34,11 +35,110 @@
 
 		<div class="nav__end d-flex js-center">
 			<div class="user-option">
-				<i class="fa-solid fa-table-cells"></i>
+				<i class="ti-layout-grid3"></i>
 			</div>
-			<div class="user-option mr-3">
+			<div class="user-option mr-3 dot">
 				<i class="fa-solid fa-ellipsis-vertical"></i>
+				<div class="user-option__active">
+					<div class="user-option__item nav-link d-flex">
+						<div class="item_icon m-right">
+							<i class="fa-regular fa-moon"></i>
+						</div>
+						<div class="item__content">Appearance: Device theme</div>
+						<div class="user-option__item-child">
+							<div class="child_title">
+								Appearance
+							</div>
+							<span>Setting applies to this browser only
+							</span>
+							<p class="child_item">
+								Use device theme
+							</p>
+							<p class="child_item">
+								Dark theme
+							</p>
+							<p class="child_item">
+								Light theme
+							</p>
+
+						</div>
+					</div>
+					<div class="user-option__item nav-link d-flex">
+						<div class="item_icon m-right">
+							<i class="fa-solid fa-language"></i>
+						</div>
+						<div class="item__content">Language: English</div>
+						<div class="user-option__item-child">
+							<div class="child_title">
+								Choose your language
+							</div>
+							<p class="child_item">
+								English(UK)
+							</p>
+							<p class="child_item">
+								English(US)
+							</p>
+							<p class="child_item">
+								Vietnamese
+							</p>
+						</div>
+					</div>
+
+					<div class="user-option__item nav-link d-flex">
+						<div class="item_icon m-right">
+							<i class="fa-solid fa-globe"></i>
+						</div>
+						<div class="item__content">Location: Viet Nam</div>
+						<div class="user-option__item-child">
+							<div class="child_title">
+								Choose your location
+							</div>
+							<p class="child_item">
+								Australia
+							</p>
+							<p class="child_item">
+								United State
+							</p>
+							<p class="child_item">
+								Vietnamese
+							</p>
+						</div>
+					</div>
+					<div class="user-option__item nav-link d-flex">
+						<div class="item_icon m-right">
+							<i class="fa-solid fa-gear"></i>
+						</div>
+						<div class="item__content">Settings</div>
+					</div>
+					<div class="user-option__item nav-link d-flex">
+						<div class="item_icon m-right">
+							<i class="fa-regular fa-id-badge"></i>
+						</div>
+						<div class="item__content">Your data in Youtube</div>
+					</div>
+					<div class="user-option__item nav-link d-flex">
+						<div class="item_icon m-right">
+							<i class="fa-regular fa-circle-question"></i>
+						</div>
+						<div class="item__content">Help</div>
+					</div>
+					<div class="user-option__item nav-link d-flex">
+						<div class="item_icon m-right">
+							<i class="fa-regular fa-message"></i>
+						</div>
+						<div class="item__content">Send feedback</div>
+					</div>
+					<div class="user-option__item nav-link d-flex">
+						<div class="item_icon m-right">
+							<i class="fa-regular fa-keyboard"></i>
+						</div>
+						<div class="item__content">Keyboard shortcuts</div>
+					</div>
+					
+				</div>
+				
 			</div>
+
 			<a class="user-login nav-link-user" href="#">
 				<i class="fa-solid fa-user color-sign"></i>
 				SIGN IN
@@ -75,6 +175,104 @@
 			<div class="item__icon"><i class="fa-solid fa-clock-rotate-left mr-4"></i></div>
 			<div class="item__content">History</div>
 		</a>
+		<div class="side-bar__login">
+				<p>Sign in to like video comment, and subcribe.</p>
+			<a href="" class="user-login nav-link-user t">
+					<i class="fa-solid fa-user color-sign"></i>
+					SIGN IN
+			</a>
+		</div>
+		<div class="side-bar__best">
+			<span>BEST OF YOUTUBE</span>
+			<a href="#" class="side-bar__item  nav-link d-flex">
+				<div class="item__icon">
+					<i class="fa-solid fa-music"></i>
+				</div>
+				<div class="item__content">Music</div>
+			</a> 
+			<a href="#" class="side-bar__item  nav-link d-flex">
+				<div class="item__icon">
+					<i class="fa-solid fa-trophy"></i>
+				</div>
+				<div class="item__content">Sports</div>
+			</a> 
+			<a href="#" class="side-bar__item  nav-link d-flex">
+				<div class="item__icon">
+					<i class="fa-solid fa-gamepad"></i>
+				</div>
+				<div class="item__content">Gaming</div>
+			</a> 
+			<a href="#" class="side-bar__item  nav-link d-flex">
+				<div class="item__icon">
+					<i class="fa-solid fa-newspaper"></i>
+				</div>
+				<div class="item__content">News</div>
+			</a>
+			<a href="#" class="side-bar__item  nav-link d-flex">
+				<div class="item__icon">
+					<i class="fa-solid fa-tower-broadcast"></i>
+				</div>
+				<div class="item__content">Live</div>
+			</a>
+			<a href="#" class="side-bar__item  nav-link d-flex">
+				<div class="item__icon">
+					<i class="fa-solid fa-vr-cardboard"></i>
+				</div>
+				<div class="item__content">360° Video</div>
+			</a>  
+		</div>
+		<div class="side-bar__best">
+			<a href="#" class="side-bar__item  nav-link d-flex">
+				<div class="item__icon">
+					<i class="fa-solid fa-circle-plus"></i>
+				</div>
+				<div class="item__content">Browse channels</div>
+			</a>  
+		</div>
+		<div class="side-bar__best">
+			<span>MORE FROM YOUTUBE</span>
+			<a href="#" class="side-bar__item  nav-link d-flex">
+				<div class="item__icon">
+					<i class="fa-solid fa-tower-broadcast"></i>
+				</div>
+				<div class="item__content">Live</div>
+			</a>
+		</div>
+		<div class="side-bar__best">
+			<a href="#" class="side-bar__item  nav-link d-flex">
+				<div class="item__icon">
+					<i class="fa-solid fa-gear"></i>
+				</div>
+				<div class="item__content">Settings</div>
+			</a>
+
+			<a href="#" class="side-bar__item  nav-link d-flex">
+				<div class="item__icon">
+					<i class="fa-regular fa-flag"></i>
+				</div>
+				<div class="item__content">Report history</div>
+			</a>
+
+			<a href="#" class="side-bar__item  nav-link d-flex">
+				<div class="item__icon">
+					<i class="fa-regular fa-circle-question"></i>
+				</div>
+				<div class="item__content">Help</div>
+			</a>
+
+			<a href="#" class="side-bar__item  nav-link d-flex">
+				<div class="item__icon">
+					<i class="fa-regular fa-message"></i>
+				</div>
+				<div class="item__content">Send feedback</div>
+			</a>
+		</div>
+		<div class="side-bar__best">
+			<p class="inf-ytb">About Press Copyright 
+				Contact us Creators Advertise Developers</p>
+			<p class="inf-ytb">	Terms   Privacy   Policy & Safety How YouTube works Test new features</p>
+			<p class="inf-ytb">© 2022 Google LLC</p>
+		</div>
 	</div>
 	<!-- Filters -->
 
@@ -96,6 +294,15 @@
 		<button class="filters_option">Eating</button>
 		<button class="filters_option">Cooking</button>
 		<button class="filters_option">Street workout</button>
+		<div>
+		<div class="btn-showmore_right">
+			<button>
+				<i class="fa-solid fa-chevron-right"></i>
+			</button>
+			
+		</div>
+		<div class="btn-showmore_shadow"> </div>
+		</div>
 	</div>
 
 	<!-- Container-video -->
@@ -107,6 +314,34 @@
 					<div class="video_thumbal">
 						<img class="thumbal_video"src="https://i.ytimg.com/vi/Vran9iR20_E/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7ytgg9EgW4fx5rp9PkUEwCqFqUw" alt="">
 						<span class="timevideo">1:06:39</span>
+					
+						<div class="video-zoom">
+							<div class="video_thumbal">
+								<img class="thumbal_video"src="https://i.ytimg.com/vi/Vran9iR20_E/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7ytgg9EgW4fx5rp9PkUEwCqFqUw" alt="">
+								<span class="timevideo">1:06:39</span>
+							</div>
+							<div class="video_content__video_info ml">
+								<img class="channel_img" src="https://yt3.ggpht.com/ytc/AKedOLT_o68De7XRZQTpTdrokT1r4aiJdzC1VELTUz6OMg=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
+								<div class="info1">
+									<span class="video_description">
+										Star Enlisted 2022 l E1 l The "Great" Cast Promises To Seriously Enlist And The End Of The First Day
+									</span>
+									<div class="info_name_channel">Sao nhập ngũ - QPVN</div>
+								</div>
+							</div>
+							<div class="video_view mv">9M views - 2 days ago</div>
+							<div class="Container_videowatcher">
+								<div class="video_watchlater">
+									<i class="fa-regular fa-clock"></i>
+									WATCH LATER
+								</div>
+								<div class="video_add">
+									<i class="fa-regular fa-chart-bar"></i>
+									ADD TO QUEUE
+								</div>
+							</div>
+						</div>
+
 					</div>
 					<div class="video_content__video_info">
 						<img class="channel_img" src="https://yt3.ggpht.com/ytc/AKedOLT_o68De7XRZQTpTdrokT1r4aiJdzC1VELTUz6OMg=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
@@ -124,9 +359,38 @@
 			<div class="video_content__col">
 				<a href="#">
 					<div class="video_thumbal">
-						<img class="thumbal_video"src="https://i.ytimg.com/an_webp/wsgnT8ZCsag/mqdefault_6s.webp?du=3000&sqp=CMjCopEG&rs=AOn4CLAqwleg2I6zr4zB7HgewhTsMX58uw" alt="">
+						<img class="thumbal_video"src="https://i.ytimg.com/vi/wsgnT8ZCsag/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLDTAIvak8RmLbkMUb2UOSalZelp6A" alt="">
 						<span class="timevideo">10:18</span>
+						
+						<div class="video-zoom">
+							<div class="video_thumbal">
+								<img class="thumbal_video"src="https://i.ytimg.com/vi/wsgnT8ZCsag/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLDTAIvak8RmLbkMUb2UOSalZelp6A" alt="">
+								<span class="timevideo">10:18</span>
+							</div>
+							<div class="video_content__video_info ml">
+								<img class="channel_img" src="https://yt3.ggpht.com/PuI_pnGKDzbC6gwBQFiZ5gbvI3ylOGVgJ-LuQRaOLDs6kl_rfKO17IhMy3L45_NcdXIpwIqLgzU=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
+								<div class="info1">
+									<span class="video_description">
+										Tập 535 |  Trò Chơi Gợi Nhớ Hoài Bão Showbiz Hàn  - RUNNING MAN HÀN VIETSUB
+									</span>
+									<div class="info_name_channel">Danet Vietnam</div>
+								</div>
+							</div>
+							<div class="video_view mv">59 N views - 2 months ago</div>
+							<div class="Container_videowatcher">
+							<div class="video_watchlater">
+								<i class="fa-regular fa-clock"></i>
+								WATCH LATER
+							</div>
+							<div class="video_add">
+								<i class="fa-regular fa-chart-bar"></i>
+								ADD TO QUEUE
+							</div>
+							</div>
+						</div>
+	
 					</div>
+
 					<div class="video_content__video_info">
 						<img class="channel_img" src="https://yt3.ggpht.com/PuI_pnGKDzbC6gwBQFiZ5gbvI3ylOGVgJ-LuQRaOLDs6kl_rfKO17IhMy3L45_NcdXIpwIqLgzU=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
 						<div class="info1">
@@ -145,7 +409,35 @@
 					<div class="video_thumbal">
 						<img class="thumbal_video"src="https://i.ytimg.com/vi/-Mo1g1awj5c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAdxah7cgWvoVdSUAltMBulJ3kVxQ" alt="">
 						<span class="timevideo">53:45</span>
+						
+						<div class="video-zoom">
+							<div class="video_thumbal">
+								<img class="thumbal_video"src="https://i.ytimg.com/vi/-Mo1g1awj5c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAdxah7cgWvoVdSUAltMBulJ3kVxQ" alt="">
+								<span class="timevideo">53:45</span>
+							</div>
+							<div class="video_content__video_info ml">
+								<img class="channel_img" src="https://yt3.ggpht.com/ytc/AKedOLT0VTUvTISucILhsRXa1EmcoHL2QcBuVeTlMg6xvQ=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
+								<div class="info1">
+									<span class="video_description">
+										#12 Hải Triều HỜN MÁT vì Trường Giang lỡ "bỏ rơi", BB Trần NÔN NÓNG bốc ăn lia lịa | MAPLVB Mùa 4
+									</span>
+									<div class="info_name_channel">Trường Giang</div>
+								</div>
+							</div>
+							<div class="video_view mv">2.8M views - 13 days ago</div>
+							<div class="Container_videowatcher">
+							<div class="video_watchlater">
+								<i class="fa-regular fa-clock"></i>
+								WATCH LATER
+							</div>
+							<div class="video_add">
+								<i class="fa-regular fa-chart-bar"></i>
+								ADD TO QUEUE
+							</div>
+							</div>
+						</div>
 					</div>
+
 					<div class="video_content__video_info">
 						<img class="channel_img" src="https://yt3.ggpht.com/ytc/AKedOLT0VTUvTISucILhsRXa1EmcoHL2QcBuVeTlMg6xvQ=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
 						<div class="info1">
@@ -164,7 +456,35 @@
 					<div class="video_thumbal">
 						<img class="thumbal_video"src="https://i.ytimg.com/vi/8rnzG2nCEbs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCN5dop5lgcX7g2Lb2DgNhSh4qA_w" alt="">
 						<span class="timevideo">2:19</span>
+
+						<div class="video-zoom">
+							<div class="video_thumbal">
+								<img class="thumbal_video"src="https://i.ytimg.com/vi/8rnzG2nCEbs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCN5dop5lgcX7g2Lb2DgNhSh4qA_w" alt="">
+								<span class="timevideo">2:19</span>
+							</div>
+							<div class="video_content__video_info ml">
+								<img class="channel_img" src="https://yt3.ggpht.com/ytc/AKedOLTUZ5cE7g7vzd5KRNQc1ekinpHZ9DsGXPE4Wi09MA=s88-c-k-c0x00ffffff-no-rj" alt="channel_img">
+								<div class="info1">
+									<span class="video_description">
+										I'll be home soon
+									</span>
+									<div class="info_name_channel">ShoffyMusic</div>
+								</div>
+							</div>
+							<div class="video_view mv">85 N views - 11 months ago</div>
+							<div class="Container_videowatcher">
+							<div class="video_watchlater">
+								<i class="fa-regular fa-clock"></i>
+								WATCH LATER
+							</div>
+							<div class="video_add">
+								<i class="fa-regular fa-chart-bar"></i>
+								ADD TO QUEUE
+							</div>
+							</div>
+						</div>
 					</div>
+
 					<div class="video_content__video_info">
 						<img class="channel_img" src="https://yt3.ggpht.com/ytc/AKedOLTUZ5cE7g7vzd5KRNQc1ekinpHZ9DsGXPE4Wi09MA=s88-c-k-c0x00ffffff-no-rj" alt="channel_img">
 						<div class="info1">
@@ -183,7 +503,35 @@
 					<div class="video_thumbal">
 						<img class="thumbal_video"src="https://i.ytimg.com/vi/_LHVoSNbUDg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB4aYofyTItGXs1nDO2t7ldifbIjQ" alt="">
 						<span class="timevideo">5:36</span>
+						
+						<div class="video-zoom">
+							<div class="video_thumbal">
+								<img class="thumbal_video"src="https://i.ytimg.com/vi/_LHVoSNbUDg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB4aYofyTItGXs1nDO2t7ldifbIjQ" alt="">
+								<span class="timevideo">5:36</span>
+							</div>
+							<div class="video_content__video_info ml">
+								<img class="channel_img" src="https://yt3.ggpht.com/dhKdcd84kdx7eDo-yTPgDJa_4H22NsJNJiCmtFdyn0lbQHYiO4C-Rx2X81T2gKnokfzTokMsCw=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
+								<div class="info1">
+									<span class="video_description">
+										TÂM SỰ CỦA CON - JayKii ft Ali Hoàng Dương | Không Gian Cảm Xúc #4
+									</span>
+									<p class="info_name_channel">BEE MUSIC</p>
+								</div>
+							</div>
+							<div class="video_view mv">2 N views - 1 days ago</div>
+							<div class="Container_videowatcher">
+							<div class="video_watchlater">
+								<i class="fa-regular fa-clock"></i>
+								WATCH LATER
+							</div>
+							<div class="video_add">
+								<i class="fa-regular fa-chart-bar"></i>
+								ADD TO QUEUE
+							</div>
+							</div>
+						</div>
 					</div>
+
 					<div class="video_content__video_info">
 						<img class="channel_img" src="https://yt3.ggpht.com/dhKdcd84kdx7eDo-yTPgDJa_4H22NsJNJiCmtFdyn0lbQHYiO4C-Rx2X81T2gKnokfzTokMsCw=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
 						<div class="info1">
@@ -202,7 +550,35 @@
 					<div class="video_thumbal">
 						<img class="thumbal_video"src="https://i.ytimg.com/vi/0XIqH9DfpIc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDEAr-XdRPP9gX808and98I2QTe9w" alt="">
 						<span class="timevideo">3:59</span>
+
+						<div class="video-zoom">
+							<div class="video_thumbal">
+								<img class="thumbal_video"src="https://i.ytimg.com/vi/0XIqH9DfpIc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDEAr-XdRPP9gX808and98I2QTe9w" alt="">
+								<span class="timevideo">3:59</span>
+							</div>
+							<div class="video_content__video_info ml">
+								<img class="channel_img" src="https://yt3.ggpht.com/11F_YIZyVcedxOy-9b__uqUco5PEOtZ_a712XYWDobizZz26V-OJs-bZfyKmd7KM0QtwNVeu=s88-c-k-c0x00ffffff-no-rj" alt="channel_img">
+								<div class="info1">
+									<span class="video_description">					
+										thinkin bout you - frank ocean (joseph solomon cover)
+									</span>
+									<p class="info_name_channel">Joseph Solomon</p>
+								</div>
+							</div>
+							<div class="video_view mv">513 N views - 3 weeks ago</div>
+							<div class="Container_videowatcher">
+							<div class="video_watchlater">
+								<i class="fa-regular fa-clock"></i>
+								WATCH LATER
+							</div>
+							<div class="video_add">
+								<i class="fa-regular fa-chart-bar"></i>
+								ADD TO QUEUE
+							</div>
+							</div>
+						</div>
 					</div>
+
 					<div class="video_content__video_info">
 						<img class="channel_img" src="https://yt3.ggpht.com/11F_YIZyVcedxOy-9b__uqUco5PEOtZ_a712XYWDobizZz26V-OJs-bZfyKmd7KM0QtwNVeu=s88-c-k-c0x00ffffff-no-rj" alt="channel_img">
 						<div class="info1">
@@ -221,7 +597,35 @@
 					<div class="video_thumbal">
 						<img class="thumbal_video"src="https://i.ytimg.com/vi/sOPnfSN994c/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACCDgJPRpqNWai6lKSgQoGgxuEyg" alt="">
 						<span class="timevideo">20:27</span>
+
+						<div class="video-zoom">
+							<div class="video_thumbal">
+								<img class="thumbal_video"src="https://i.ytimg.com/vi/sOPnfSN994c/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACCDgJPRpqNWai6lKSgQoGgxuEyg" alt="">
+								<span class="timevideo">20:27</span>
+							</div>
+							<div class="video_content__video_info ml">
+								<img class="channel_img" src="https://yt3.ggpht.com/yeivP6BCS33WnuhrmgNWIEH9Bs-mVqxqeYFU4mFsnZxS3htO5hfaC6Q5Uu3VAiXd99NrEnbW5Q=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
+								<div class="info1">
+									<span class="video_description">
+										Bản tin Covid-19 ngày 7/3: Cả nước thêm 147.358 ca | Dự báo TP.HCM còn 1 làn sóng dịch
+									</span>
+									<p class="info_name_channel">Báo Thanh Niên</p>
+								</div>
+							</div>
+							<div class="video_view mv">104 N views - 3 days ago</div>
+							<div class="Container_videowatcher">
+							<div class="video_watchlater">
+								<i class="fa-regular fa-clock"></i>
+								WATCH LATER
+							</div>
+							<div class="video_add">
+								<i class="fa-regular fa-chart-bar"></i>
+								ADD TO QUEUE
+							</div>
+							</div>
+						</div>
 					</div>
+
 					<div class="video_content__video_info">
 						<img class="channel_img" src="https://yt3.ggpht.com/yeivP6BCS33WnuhrmgNWIEH9Bs-mVqxqeYFU4mFsnZxS3htO5hfaC6Q5Uu3VAiXd99NrEnbW5Q=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
 						<div class="info1">
@@ -238,9 +642,37 @@
 			<div class="video_content__col">
 				<a href="#">
 					<div class="video_thumbal">
-						<img class="thumbal_video"src="https://i.ytimg.com/an_webp/B3SAzRZHpHM/mqdefault_6s.webp?du=3000&sqp=CNXLopEG&rs=AOn4CLA0nI5ShTBYdQk2qfD4Iv2Fvje-5A" alt="">
+						<img class="thumbal_video"src="https://i.ytimg.com/vi/B3SAzRZHpHM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCayXwPV0nF_bPyxtgGtYDLUjZvSg" alt="">
 						<span class="timevideo">6:45</span>
+
+						<div class="video-zoom">
+							<div class="video_thumbal">
+								<img class="thumbal_video"src="https://i.ytimg.com/vi/B3SAzRZHpHM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCayXwPV0nF_bPyxtgGtYDLUjZvSg" alt="">
+								<span class="timevideo">6:45</span>
+							</div>
+							<div class="video_content__video_info ml">
+								<img class="channel_img" src="https://yt3.ggpht.com/E3wmTEtzAuluCYtlIFPoB1krW6wYZecaTBhf4oRpQBSz0b3iBnvgn3WzBRbyVcz_QVyezzJgqg=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
+								<div class="info1">
+									<span class="video_description">
+										Nổi mề đay, mất vị giác hậu Covid-19 nên làm gì? | VTC Now
+									</span>
+									<p class="info_name_channel">VTC NOW</p>
+								</div>
+							</div>
+							<div class="video_view mv">30 N views - 3 days ago</div>
+							<div class="Container_videowatcher">
+							<div class="video_watchlater">
+								<i class="fa-regular fa-clock"></i>
+								WATCH LATER
+							</div>
+							<div class="video_add">
+								<i class="fa-regular fa-chart-bar"></i>
+								ADD TO QUEUE
+							</div>
+							</div>
+						</div>
 					</div>
+
 					<div class="video_content__video_info">
 						<img class="channel_img" src="https://yt3.ggpht.com/E3wmTEtzAuluCYtlIFPoB1krW6wYZecaTBhf4oRpQBSz0b3iBnvgn3WzBRbyVcz_QVyezzJgqg=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
 						<div class="info1">
@@ -253,9 +685,436 @@
 					<div class="video_view">30 N views - 3 days ago</div>
 				</a>
 			</div>
-
 		</div>
+			<!-- Video_concert -->
+	<div class="video_concert">
+		<div class="dimissible">
+			<div class="header-shelf">
+				<div class="header-shelf-title d-flex">
+					<img id="avatar" src="https://www.gstatic.com/youtube/img/promos/growth/89b823076e69603158cbfbf71a87a7c82de15d06ff242b0205a70d83753879e8_120x120.png" alt="">
+					<div class="header-shelf-title__content">
+						<div class="title_text">
+							<h2>Tin tức về Covid-19</h2>
+							<span class="highlight_text">
+								Nổi bật
+							</span>
+						</div>
+						<div class="subtitle">
+							Thông tin về vaccine COVID-19
+						</div>
+					</div>
+				</div>
+				<div class="dismiss">
+					<button class="btn"><i class="fa-solid fa-xmark"></i></button>
+					<div class="inform">
+						Không quan tâm
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- media video -->
+		<div class="media_row d-flex">
+			<div class="video_content__col fix-media">
+				<a href="#">
+					<div class="video_thumbal">
+						<img class="thumbal_video"src="https://i.ytimg.com/vi/4nuS4N4sfPU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCmgKLCb82Qiv3IzL3qbo4Y5lPsFg" alt="">
+						<span class="timevideo">2:22</span>
+
+						<div class="video-zoom">
+							<div class="video_thumbal">
+								<img class="thumbal_video"src="https://i.ytimg.com/vi/4nuS4N4sfPU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCmgKLCb82Qiv3IzL3qbo4Y5lPsFg" alt="">
+								<span class="timevideo">2:22</span>
+							</div>
+							<div class="video_content__video_info ml">
+								<img class="channel_img" src="https://yt3.ggpht.com/zSMZASn_DIMp-Dme9ZKavLiQUh4Foxt6yiobUTJ4lWmuf-Ypk43L4QQksTOx6lEkKf-QbKNkHw=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
+								<div class="info1">
+									<span class="video_description">					
+										Người mắc COVID-19 có thể bỏ hoàn toàn virus khỏi cơ thể
+									</span>
+									<p class="info_name_channel">Video AloBacsi</p>
+								</div>
+							</div>
+							<div class="video_view mv">93 N lượt xem - 2 ngày trước</div>
+							<div class="Container_videowatcher">
+							<div class="video_watchlater">
+								<i class="fa-regular fa-clock"></i>
+								WATCH LATER
+							</div>
+							<div class="video_add">
+								<i class="fa-regular fa-chart-bar"></i>
+								ADD TO QUEUE
+							</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="video_content__video_info">
+						<img class="channel_img" src="https://yt3.ggpht.com/zSMZASn_DIMp-Dme9ZKavLiQUh4Foxt6yiobUTJ4lWmuf-Ypk43L4QQksTOx6lEkKf-QbKNkHw=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
+						<div class="info1">
+							<span class="video_description">					
+								Người mắc COVID-19 có thể bỏ hoàn toàn virus khỏi cơ thể
+							</span>
+							<p class="info_name_channel">Video AloBacsi</p>
+						</div>
+					</div>
+					<div class="video_view">93 N lượt xem - 2 ngày trước</div>
+				</a>
+			</div>
+			<div class="video_content__col fix-media">
+				<a href="#">
+					<div class="video_thumbal">
+						<img class="thumbal_video"src="https://i.ytimg.com/vi/WBNnBy2FyUU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAfTB2HAewV7p8qPbm3WF2vPcnCkw" alt="">
+						<span class="timevideo">8:02</span>
+
+						<div class="video-zoom">
+							<div class="video_thumbal">
+								<img class="thumbal_video"src="https://i.ytimg.com/vi/WBNnBy2FyUU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAfTB2HAewV7p8qPbm3WF2vPcnCkw" alt="">
+								<span class="timevideo">8:02</span>
+							</div>
+							<div class="video_content__video_info ml">
+								<img class="channel_img" src="https://yt3.ggpht.com/E3wmTEtzAuluCYtlIFPoB1krW6wYZecaTBhf4oRpQBSz0b3iBnvgn3WzBRbyVcz_QVyezzJgqg=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
+								<div class="info1">
+									<span class="video_description">					
+										Ngày 8/3, số ca mắc Covid-19 cả nước tăng lên 162.435, Hà Nội nhiều nhất với hơn 32.000 ca | VTC Now
+									</span>
+									<p class="info_name_channel">VTC NOW</p>
+								</div>
+							</div>
+							<div class="video_view mv">20 N lượt xem </div>
+							<div class="video_view mv">Phát trực tiếp 2 ngày trước</div>
+							<div class="Container_videowatcher">
+							<div class="video_watchlater">
+								<i class="fa-regular fa-clock"></i>
+								WATCH LATER
+							</div>
+							<div class="video_add">
+								<i class="fa-regular fa-chart-bar"></i>
+								ADD TO QUEUE
+							</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="video_content__video_info">
+						<img class="channel_img" src="https://yt3.ggpht.com/E3wmTEtzAuluCYtlIFPoB1krW6wYZecaTBhf4oRpQBSz0b3iBnvgn3WzBRbyVcz_QVyezzJgqg=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
+						<div class="info1">
+							<span class="video_description">					
+								Ngày 8/3, số ca mắc Covid-19 cả nước tăng lên 162.435, Hà Nội nhiều nhất với hơn 32.000 ca | VTC Now
+							</span>
+							<p class="info_name_channel">VTC NOW</p>
+						</div>
+					</div>
+					<div class="video_view">20 N lượt xem </div>
+					<div class="video_view">Phát trực tiếp 2 ngày trước</div>
+				</a>
+			</div>
+			<div class="video_content__col fix-media">
+				<a href="#">
+					<div class="video_thumbal">
+						<img class="thumbal_video"src="https://i.ytimg.com/vi/trfnkX-Rp1I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDouP6IaG4wu7MlR5moD0w19bRYnA" alt="">
+						<span class="timevideo">8:12</span>
+
+						<div class="video-zoom">
+							<div class="video_thumbal">
+								<img class="thumbal_video"src="https://i.ytimg.com/vi/trfnkX-Rp1I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDouP6IaG4wu7MlR5moD0w19bRYnA" alt="">
+								<span class="timevideo">8:12</span>
+							</div>
+							<div class="video_content__video_info ml">
+								<img class="channel_img" src="https://yt3.ggpht.com/UAIOW5NLHyFRFW2DKjHbQ-7IujGNFRwQoM14g-2gyjBXRpxzpJEyBuIdIspPGOVUTKxAHBkn3SA=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
+								<div class="info1">
+									<span class="video_description">					
+										Tiến tới coi COVID-19 là bệnh đặc hữu | VTV24
+									</span>
+									<p class="info_name_channel">VTV24
+										</p>
+								</div>
+							</div>
+							<div class="video_view mv">43 N lượt xem - 1 ngày trước</div>
+							<div class="Container_videowatcher">
+							<div class="video_watchlater">
+								<i class="fa-regular fa-clock"></i>
+								WATCH LATER
+							</div>
+							<div class="video_add">
+								<i class="fa-regular fa-chart-bar"></i>
+								ADD TO QUEUE
+							</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="video_content__video_info">
+						<img class="channel_img" src="https://yt3.ggpht.com/UAIOW5NLHyFRFW2DKjHbQ-7IujGNFRwQoM14g-2gyjBXRpxzpJEyBuIdIspPGOVUTKxAHBkn3SA=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
+						<div class="info1">
+							<span class="video_description">					
+								Tiến tới coi COVID-19 là bệnh đặc hữu | VTV24
+							</span>
+							<p class="info_name_channel">VTV24
+								</p>
+						</div>
+					</div>
+					<div class="video_view">43 N lượt xem - 1 ngày trước</div>
+				</a>
+			</div>
+			<div class="video_content__col fix-media">
+				<a href="#">
+					<div class="video_thumbal">
+						<img class="thumbal_video"src="https://i.ytimg.com/vi/R6ClYy7ewCw/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzZrhuCOd3L-LnXe2ZbY92Pn1UxA" alt="">
+						<span class="timevideo">8:13</span>
+
+						<div class="video-zoom">
+							<div class="video_thumbal">
+								<img class="thumbal_video"src="https://i.ytimg.com/vi/R6ClYy7ewCw/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzZrhuCOd3L-LnXe2ZbY92Pn1UxA" alt="">
+								<span class="timevideo">8:13</span>
+							</div>
+							<div class="video_content__video_info ml">
+								<img class="channel_img" src="https://yt3.ggpht.com/yeivP6BCS33WnuhrmgNWIEH9Bs-mVqxqeYFU4mFsnZxS3htO5hfaC6Q5Uu3VAiXd99NrEnbW5Q=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
+								<div class="info1">
+									<span class="video_description">					
+										Ngày 8/3: Công bố 194.815 ca Covid-19, 70.902 ca khỏi | Hà Nội 32.650 ca | TP.HCM 1.500 ca								</span>
+									<p class="info_name_channel">Báo Thanh Niên</p>
+								</div>
+							</div>
+							<div class="video_view mv">192 N lượt xem - 2 ngày trước</div>
+							<div class="Container_videowatcher">
+							<div class="video_watchlater">
+								<i class="fa-regular fa-clock"></i>
+								WATCH LATER
+							</div>
+							<div class="video_add">
+								<i class="fa-regular fa-chart-bar"></i>
+								ADD TO QUEUE
+							</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="video_content__video_info">
+						<img class="channel_img" src="https://yt3.ggpht.com/yeivP6BCS33WnuhrmgNWIEH9Bs-mVqxqeYFU4mFsnZxS3htO5hfaC6Q5Uu3VAiXd99NrEnbW5Q=s68-c-k-c0x00ffffff-no-rj" alt="channel_img">
+						<div class="info1">
+							<span class="video_description">					
+								Ngày 8/3: Công bố 194.815 ca Covid-19, 70.902 ca khỏi | Hà Nội 32.650 ca | TP.HCM 1.500 ca								</span>
+							<p class="info_name_channel">Báo Thanh Niên</p>
+						</div>
+					</div>
+					<div class="video_view">192 N lượt xem - 2 ngày trước</div>
+				</a>
+			</div>
+		</div>
+		<a href="#">
+		<div class="showmore_btn">
+			
+				<button class="btn showmore">
+					<i class="fa-solid fa-angle-down"></i>
+				</button>
+		</div>
+		</a>
 	</div>
+	<!-- Trending -->
+	<div class="trending">
+		<div class="title_trending">
+			Trending
+		</div>
+		<div class="trending__content d-flex">
+			<div class="video_content__col">
+				<a href="#">
+					<div class="video_thumbal">
+						<img class="thumbal_video"src="https://i.ytimg.com/vi/AfNbehFKJ7o/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBD2VuPv444RwBGMQsOEEM168PYsQ" alt="">
+						<span class="timevideo">3:24</span>
+
+						<div class="video-zoom">
+							<div class="video_thumbal">
+								<img class="thumbal_video"src="https://i.ytimg.com/vi/AfNbehFKJ7o/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBD2VuPv444RwBGMQsOEEM168PYsQ" alt="">
+								<span class="timevideo">3:24</span>
+							</div>
+							<div class="video_content__video_info ml">
+								<img class="channel_img" src="https://yt3.ggpht.com/6YcZNUG6WikUz2qMVkpxV4X6lPWCQiVcMw34V1cjgD33MeHSgnUMM4XKRFsr9opGFSpg-biqHdk=s88-c-k-c0x00ffffff-no-rj" alt="channel_img">
+								<div class="info1">
+									<span class="video_description">
+										NGÀY ĐẦU TIÊN - ĐỨC PHÚC|DANCE PERFORMENCE
+									</span>
+									<p class="info_name_channel">ĐỨC PHÚC OFFICIAL</p>
+								</div>
+							</div>
+							<div class="video_view mv">7.3 M views - 2 weeks ago</div>
+							<div class="Container_videowatcher">
+							<div class="video_watchlater">
+								<i class="fa-regular fa-clock"></i>
+								WATCH LATER
+							</div>
+							<div class="video_add">
+								<i class="fa-regular fa-chart-bar"></i>
+								ADD TO QUEUE
+							</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="video_content__video_info">
+						<img class="channel_img" src="https://yt3.ggpht.com/6YcZNUG6WikUz2qMVkpxV4X6lPWCQiVcMw34V1cjgD33MeHSgnUMM4XKRFsr9opGFSpg-biqHdk=s88-c-k-c0x00ffffff-no-rj" alt="channel_img">
+						<div class="info1">
+							<span class="video_description">
+								NGÀY ĐẦU TIÊN - ĐỨC PHÚC|DANCE PERFORMENCE
+							</span>
+							<p class="info_name_channel">ĐỨC PHÚC OFFICIAL</p>
+						</div>
+					</div>
+					<div class="video_view">7.3 M views - 2 weeks ago</div>
+				</a>
+			</div>
+	
+			<div class="video_content__col">
+				<a href="#">
+					<div class="video_thumbal">
+						<img class="thumbal_video"src="https://i.ytimg.com/vi/LDjIeLl2xAU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDOC0nyBRKc0xF97BDKp-uYVFiWDg" alt="">
+						<span class="timevideo">4:28</span>
+
+						<div class="video-zoom">
+							<div class="video_thumbal">
+								<img class="thumbal_video"src="https://i.ytimg.com/vi/LDjIeLl2xAU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDOC0nyBRKc0xF97BDKp-uYVFiWDg" alt="">
+								<span class="timevideo">4:28</span>
+							</div>
+							<div class="video_content__video_info ml">
+								<img class="channel_img" src="https://yt3.ggpht.com/cKPc1YMr3sYW8otlLwmycS5BnWGLQ1TXU_euLxm2bFiC4wvGJCsX2XVtf7Lj4pQoE3pPYDKq=s88-c-k-c0x00ffffff-no-rj" alt="channel_img">
+								<div class="info1">
+									<span class="video_description">
+										MỸ TÂM - NGÀY CHƯA GIÔNG BÃO (LIVE) | MY SOUL 1981
+									</span>
+									<p class="info_name_channel">My Tam</p>
+								</div>
+							</div>
+							<div class="video_view mv">2.7 M views - 13 days ago</div>
+							<div class="Container_videowatcher">
+							<div class="video_watchlater">
+								<i class="fa-regular fa-clock"></i>
+								WATCH LATER
+							</div>
+							<div class="video_add">
+								<i class="fa-regular fa-chart-bar"></i>
+								ADD TO QUEUE
+							</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="video_content__video_info">
+						<img class="channel_img" src="https://yt3.ggpht.com/cKPc1YMr3sYW8otlLwmycS5BnWGLQ1TXU_euLxm2bFiC4wvGJCsX2XVtf7Lj4pQoE3pPYDKq=s88-c-k-c0x00ffffff-no-rj" alt="channel_img">
+						<div class="info1">
+							<span class="video_description">
+								MỸ TÂM - NGÀY CHƯA GIÔNG BÃO (LIVE) | MY SOUL 1981
+							</span>
+							<p class="info_name_channel">My Tam</p>
+						</div>
+					</div>
+					<div class="video_view">2.7 M views - 13 days ago</div>
+				</a>
+			</div>
+	
+			<div class="video_content__col">
+				<a href="#">
+					<div class="video_thumbal">
+						<img class="thumbal_video"src="https://i.ytimg.com/vi/Yw9Ra2UiVLw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDWRjVVItTNbyCeajdohw2CCljuDw" alt="">
+						<span class="timevideo">2:39</span>
+
+						<div class="video-zoom">
+							<div class="video_thumbal">
+								<img class="thumbal_video"src="https://i.ytimg.com/vi/Yw9Ra2UiVLw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDWRjVVItTNbyCeajdohw2CCljuDw" alt="">
+								<span class="timevideo">2:39</span>
+							</div>
+							<div class="video_content__video_info ml">
+								<img class="channel_img" src="  https://yt3.ggpht.com/ytc/AKedOLRYf6yMVKjilhkHsRAOmNOCFXJ_V92tLxf9d53t=s88-c-k-c0x00ffffff-no-rj" alt="channel_img">
+								<div class="info1">
+									<span class="video_description">
+										Chìm Sâu - RPT MCK (feat. Trung Trần) | Official Lyrics Video
+									</span>
+									<p class="info_name_channel">MCK // Nger</p>
+								</div>
+							</div>
+							<div class="video_view mv">5 M views - 13 days ago</div>
+							<div class="Container_videowatcher">
+							<div class="video_watchlater">
+								<i class="fa-regular fa-clock"></i>
+								WATCH LATER
+							</div>
+							<div class="video_add">
+								<i class="fa-regular fa-chart-bar"></i>
+								ADD TO QUEUE
+							</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="video_content__video_info">
+						<img class="channel_img" src="  https://yt3.ggpht.com/ytc/AKedOLRYf6yMVKjilhkHsRAOmNOCFXJ_V92tLxf9d53t=s88-c-k-c0x00ffffff-no-rj" alt="channel_img">
+						<div class="info1">
+							<span class="video_description">
+								Chìm Sâu - RPT MCK (feat. Trung Trần) | Official Lyrics Video
+							</span>
+							<p class="info_name_channel">MCK // Nger</p>
+						</div>
+					</div>
+					<div class="video_view">5 M views - 13 days ago</div>
+				</a>
+			</div>
+	
+			<div class="video_content__col">
+				<a href="#">
+					<div class="video_thumbal">
+						<img class="thumbal_video"src="https://i.ytimg.com/vi/D80QnP0iRBo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_iSUVarALHaIgrrEDN0KZCQRMrw" alt="">
+						<span class="timevideo">5:06</span>
+
+						<div class="video-zoom">
+							<div class="video_thumbal">
+								<img class="thumbal_video"src="https://i.ytimg.com/vi/D80QnP0iRBo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_iSUVarALHaIgrrEDN0KZCQRMrw" alt="">
+								<span class="timevideo">5:06</span>
+							</div>
+							<div class="video_content__video_info ml">
+								<img class="channel_img" src="https://yt3.ggpht.com/oAHulnHdw3lE5YGYd3AYefrYtGgIFdwfazQ8Xsa8a6pKMbqcNj_VvNbJ6BLSr0pVMaPwh1I4_A=s88-c-k-c0x00ffffff-no-rj" alt="channel_img">
+								<div class="info1">
+									<span class="video_description">
+										ERIK - Đau Nhất Là Lặng Im (Official Music Video)
+									</span>
+									<p class="info_name_channel">ERIK Official</p>
+								</div>
+							</div>
+							<div class="video_view mv">10 M views - 3 weeks ago</div>
+							<div class="Container_videowatcher">
+							<div class="video_watchlater">
+								<i class="fa-regular fa-clock"></i>
+								WATCH LATER
+							</div>
+							<div class="video_add">
+								<i class="fa-regular fa-chart-bar"></i>
+								ADD TO QUEUE
+							</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="video_content__video_info">
+						<img class="channel_img" src="https://yt3.ggpht.com/oAHulnHdw3lE5YGYd3AYefrYtGgIFdwfazQ8Xsa8a6pKMbqcNj_VvNbJ6BLSr0pVMaPwh1I4_A=s88-c-k-c0x00ffffff-no-rj" alt="channel_img">
+						<div class="info1">
+							<span class="video_description">
+								ERIK - Đau Nhất Là Lặng Im (Official Music Video)
+							</span>
+							<p class="info_name_channel">ERIK Official</p>
+						</div>
+					</div>
+					<div class="video_view">10 M views - 3 weeks ago</div>
+				</a>
+			</div>
+		</div>
+	
+		</div>
+		<a href="#">
+			<div class="showmore_btn">
+
+					<button class="btn showmore">
+						<i class="fa-solid fa-angle-down"></i>
+					</button>
+			</div>
+	</div>
+</div>
 
 </body>
 </html>
